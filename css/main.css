@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+/* 热门品牌 样式 */
+
+#main .brand {
+    width: 1100px;
+    margin: 25px auto;
+}
+
+#main .brand h2 {
+    font-size: 22px;
+}
+
+#main .brand h2 span {
+    font-size: 14px;
+    color: #999999;
+}
+
+#main .brand-box {
+    height: 355px;
+}
+
+#main .brand-box .brand-l {
+    width: 219px;
+    height: 355px;    
+}
+
+#main .brand-box .brand-l img {
+    width: 219px;
+    height: 219px;
+}
+
+#main .brand-box .brand-l a {
+    display: block;
+}
+
+#main .brand-box .brand-l a :nth-child(n) {
+    display: block;
+}
+
+#main .brand-box .brand-l .txt {
+    height: 136px;
+    background-color: #151515;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+}
+
+#main .brand-box .brand-l .name {
+    height: 30px;
+    padding: 41px 0 4px;
+    font-size: 20px;
+}
+
+#main .brand-box ul {
+    width: 880px;
+    border-top: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+}
+
+#main .brand-box ul li {
+    position: relative;
+    float: left;
+    width: 219px;
+    height: 176px;
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    text-align: center;
+}
+
+#main .brand-box ul li img {
+    margin-top: 12px;
+    transform-origin: center top;
+    transition: transform 300ms ease-in;
+}
+
+#main .brand-box ul li .brand-slogan {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    
+    transition: opacity 300ms ease-in;
+}
+
+#main .brand-box li .action {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: #999999;
+    
+    transition: opacity 300ms ease-in;
+}
+
+#main .brand-box li .action .follow {
+    display: block;
+    width: 52px;
+    height: 20px;
+    line-height: 20px;
+    margin: 8px 0 0 10px;
+    color: #999999;
+    border: 1px solid #999999;
+    border-radius: 20px;
+}
+
+#main .brand-box li .action p {
+    margin: 70px 0 8px;
+}
+
+#main .brand-box li .action .enter {
+    display: block;
+    width: 80px;
+    height: 36px;
+    line-height: 36px;
+    color: #ff1e3c;
+    border: 2px solid #ff1e3c;
+    border-radius: 32px;
+    margin: 0 auto;
+}
+
+#main .brand-box li:hover img {
+    transform: scale(.66);
+}
+
+#main .brand-box li:hover .brand-slogan {
+    opacity: 0;
+}
+
+#main .brand-box li:hover .action {
+    opacity: 1;
+}

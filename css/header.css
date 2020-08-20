@@ -1,0 +1,203 @@
+@charset "utf-8";
+
+#header .user-box {
+    height: 30px;
+    background-color: #000000;
+    color: #999999;
+}
+
+#header .user-inner {    
+    width: 1090px;  
+    margin: 0 auto;
+}
+
+#header .user-inner>span {
+    line-height: 30px;
+}
+
+#header .user-inner li.float-l {
+    padding: 0px 15px;
+} 
+
+#header .user-inner a {    
+    line-height: 30px;
+    color: #999999;
+}
+
+#header .user-inner li.float-l:not(.more-father):hover a {
+    color: #ffffff;
+}
+
+/* 黑底菜单栏的二维码 */
+#header .user-inner .qr-box {
+    position: relative;
+}
+
+#header .user-inner .qr-img {
+    display: none;
+    position: absolute;
+    top: 40px;
+    transform: translate(-50%);
+    left: 50%;
+
+    width: 116px;
+    height: 160px;
+    padding: 5px;
+    border: 1px solid #ededee;
+    background-color: #ffffff;
+    text-align: center;
+    z-index: 1;
+}
+
+#header .user-inner .qr-img img {
+    display: inline-block;
+    width: 116px;
+    height: 116px;
+}
+
+#header .user-inner .qr-img span {
+    display: inline-block;
+    color: #000000;
+    font-size: 14px;
+}
+
+#header .user-inner .qr-img .arrow {
+    position: absolute;
+    top: -6px;
+    left: 58px;
+    background-color: #ffffff;
+}
+
+#header .qr-box a:hover+.qr-img {
+    display: block;
+}
+
+/* 黑底菜单栏的右边下拉菜单 */
+#header .more-father {
+    position: relative;    
+}
+
+#header .more-father:hover {
+    background-color: #ffffff;
+}
+
+#header .more-father:hover>a {
+    color: #ff1e32;
+}
+
+#header .triangle {
+    position: relative;
+    top: 2px;
+    display: inline-block;
+}
+
+#header .more-father:hover .triangle {
+    border-top-color: #ff1e32;
+    transform: rotate(180deg);
+    transform-origin: center 2px;
+    transition-property: transform;
+    transition-duration: 200ms;
+}
+
+#header .more-children {   
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding-left: 10px;
+    width: 90px;
+
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+#header .more-children a {
+    color: #666666;
+}
+
+#header .more-father:hover .more-children {
+    display: block;
+}
+
+#header .more-children li:hover a {
+    color: #ff1e32;
+}
+
+/* logo+搜索框+购物车 */
+#header .search-box {
+    width: 1090px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+#header .search-box .logo{
+    display: inline-block;
+    /* 通过relative使元素垂直居中 */
+    position: relative;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+
+    width: 300px;
+    height: 65px;
+}
+
+#header .search-box .search {
+    position: relative;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 511px;
+    height: 40px;
+    border: 2px solid #ff2337;
+    border-radius: 30px;
+}
+
+#header .search-box .search input{
+    width: 410px;
+    height: 24px;
+    margin: 8px 0px 8px 40px;
+}
+
+#header .search-box .search a{
+    display: inline-block;
+    width: 60px;
+    height: 40px;
+    background-color: #ff2337;
+    border-radius: 30px;
+
+    position: absolute;
+    right: -1px;
+    top: 0;
+}
+
+#header .search-box .search i{
+    display: inline-block;
+    width: 60px;
+    height: 40px;
+    background: url("../img/search_20_20.png") no-repeat 50%;
+}
+
+#header .search-box .cart {
+    position: relative;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 106px;
+    height: 40px;
+    margin: 0 50px;
+
+    border: 2px solid #ff2337;
+    border-radius: 30px;    
+    text-align: center;
+}
+
+#header .search-box .cart a {
+    line-height: 40px;
+    color: #333333;
+    font-size: 14px;
+}
+
+#header .search-box .cart a:hover {
+    color: #ff1e32;
+}
